@@ -6,5 +6,5 @@ ENV WP_VER 4.0.1
 RUN ["yum", "install", "-y", "httpd"]
 #RUN yum install -y httpd
 ENTRYPOINT ["/sbin/httpd", "-X"]
-ADD wordpress-$WP_ENV.tar.gz /var/www/html/
+ADD wordpress-$WP_VER.tar.gz /var/www/html/
 EXPOSE 80
